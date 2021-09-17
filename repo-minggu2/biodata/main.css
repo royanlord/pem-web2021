@@ -1,0 +1,114 @@
+@font-face {
+    font-family: dairycattle; src: url('biodata/font/dairycattle.otf');
+    font-family: PoetsenOne; src: url('biodata/font/PoetsenOne-Regular.ttf');
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(gambar/tech.jpeg);
+    background-size: cover;
+}
+
+/* Container */
+.container{
+    background-color: azure;
+    margin: 45px auto;
+    width: 1000pt;
+    border-radius: 10px;
+    /* min-height: 100%; */
+}
+
+/* Header */
+.header{
+    padding: 15px;
+}
+
+.header h1{
+    text-align: center;
+    font-family:serif;
+    font-size: 45px;
+}
+
+/* Line */
+.line{
+    border-bottom: solid rgb(231, 5, 5);
+}
+
+/* Body */
+.body{
+    padding-bottom: 40px;
+}
+/* Biodata */
+.biodata{
+    margin: 40px 250px 0px 250px;
+}
+
+.biodata img{
+    height: 350px;
+    border: solid white;
+    /* padding-left: 265px; */
+}
+
+.biodata table{
+    padding: 20px 0px 0px 0px;
+    font-family: serif;
+    font-size: 20px;
+}
+
+/* Schedule KRS */
+.sched-krs{
+    background-color: white;
+    margin: 50px auto;
+    padding: 0px 0px 40px 0px;
+    width: 780pt;
+    border: groove;
+    border-width: thin;
+    border-radius: 5px;
+}
+
+.sched-krs h2{
+    text-align: center;
+    font-family: serif;
+    font-size: 30px;
+    padding: 28px 0px 0px 0px;
+}
+
+/* Table */
+.sched-krs table{
+    font-family: serif;
+    font-size: 20px;
+    border: groove thin;
+}
+
+.sched-krs thead{
+    background-color: #667bbb;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.sched-krs tr{
+    text-align: center;
+}
+
+.odd{
+    background-color: whitesmoke;
+}
+
+/* Footer */
+.footer{
+    margin: 45px auto;
+    width: 1000pt;
+    /* position: static; */
+    min-height: 100%;
+}
+
+.footer h3{
+    font-family: serif;
+    /* opacity: 50%; */
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+}
