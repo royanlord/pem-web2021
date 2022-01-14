@@ -1,0 +1,237 @@
+@font-face {
+    font-family: Gorditas; src: url('font/Gorditas-Regular.ttf');
+}
+
+@font-face {
+    font-family: Rakkas; src: url('font/Rakkas-Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto-Slab; src: url('font/RobotoSlab-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    /* position: absolute; */
+    /* overflow-x: hidden; */
+}
+
+/* body:before{
+    content: "";
+    position: fixed;
+    z-index: -1;
+    filter: blur(15px);
+} */
+
+/* Header */
+header {
+    background-color: black;
+    height: auto;
+    padding: 5px;
+}
+
+header h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: Rakkas;
+    padding-top: 40px;
+}
+
+.mark1{
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+header p {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20PX;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #FFF500;
+    position: relative;
+    overflow: hidden;
+    height: 59px;
+    width: 100%;
+    margin-right: 0; margin-left: 0;
+}
+
+/* Text Navbar */
+.navbar .text-nav {
+    color: black;
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 17px 17px;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .text-nav:hover {
+    background-color: #262626;
+    color: yellow;
+    transition-duration: 500ms;
+}
+
+/* Navbar user-login icon */
+.navbar .fa-user {
+    /* position: static; */
+    margin-right: 70px;
+    padding: 13px 37px;
+    float: right;
+    text-align: center;
+    color: black;
+    display: block;
+}
+
+.navbar .fa-user:hover {
+    background-color: #262626;
+    color: yellow;
+    transition-duration: 500ms;
+}
+
+/* Opening web */
+.opening-web {
+    background-image: url('image/esports-back.jpg');
+    height: 645px;
+    width: 100%;
+    background-size: cover;
+}
+
+.opening-content {
+    padding-top: 110px;
+}
+
+.opening-content h2 {
+    color: white;
+    font-family: Gorditas;
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.opening-content h1 {
+    color: white;
+    font-family: Gorditas;
+    font-size: 5em;
+    font-weight: normal;
+    text-align: center;
+    margin-top: -40px;
+}
+
+.opening-content hr {
+    margin-top: -25px;
+}
+
+/* Highlight */
+.highlight {
+    background-color: #222222;
+    height: auto;
+    width: 100%;
+}
+
+.highlight h1 {
+    color: white;
+    font-family: Roboto-Slab;
+    font-size: 50px;
+    text-align: center;
+    float: left;
+    margin: 35px 41px;
+}
+
+/* Img in Highight */
+.item-cont img {
+    max-width: 640px;
+    width: 100%;
+    /* object-fit: cover;
+    object-position: bottom; */
+    height: auto;
+}
+/* About web */
+.about-web {
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+
+.about-web ul li {
+    padding: 2em;
+    color: white;
+}
+
+.about-web ul li span {
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+    font-family: Roboto-Slab;
+}
+
+/* Dsec and Contact */
+.about-web .desc-contact {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    margin: 0;
+    padding: 0;
+}
+
+/* Desc */
+.about-web .desc-contact .desc {
+    /* margin-left: 50px; */
+    font-size: 20px;
+}
+
+/* Contact */
+p .hub {
+    text-decoration: none;
+    color: white;
+    font-family: Roboto-Slab;
+}
+
+p .hub:hover {
+    text-decoration: underline;
+}
+
+/* Follow */
+.about-web .follow {
+    list-style-type: none;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.fa-instagram, .fa-tiktok, .fa-twitter {
+    padding: 0 15px;
+    margin-top: 10px;
+    color: white;
+    font-size: 40px;
+}
+
+/* Footer */
+footer {
+    margin-top: -20px;
+    background-color: #FFF500;
+    width: 100%;
+    height: auto;
+}
+
+footer p {
+    font-family: Roboto-Slab;
+    text-align: center;
+    padding: 20px 0;
+}

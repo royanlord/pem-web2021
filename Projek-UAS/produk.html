@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewpoint" content="width=device, initial-scale=1, maximum-scale=1, user-scalable:no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="produk.css">
+        <link rel="stylesheet" href="font/fontawesome-free-5.15.4-web/css/all.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <title>Produk</title>
+    </head>
+    <body>
+        <header>
+            <h1>MEONG<mark class="mark1">PEDIA</mark></h1>
+            <p>Top Up Item Game Termurah dan Terpercaya di Indonesia</p>
+        </header>
+        <nav>
+            <a href="index.html" class="text-nav">Home</a>
+            <a href="#" class="text-nav">Produk</a>
+            <a href="#" class="text-nav">About</a>
+            <a href="#" class="text-nav">Contact</a>
+            <div class="user-icon" style="font-size: 17px;">
+                <a href="register.html"><i class="fa fa-user fa-2x"></i></a>
+            </div>
+        </nav>
+        <section>
+            <div class="produk">
+                <h1>Top Up Diamonds Mobile Legends</h1>
+                <div class="desc-produk">
+                    <img src="image/diamonds-mlbb.jpg">
+                    <h5 data-aos="zoom-in" data-aos-duration="1000">
+                        Aman, Murah, dan Terpercaya
+                        <br>
+                        <font size="4" color="yellow">
+                            <b data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="350">Diproses Oleh Sistem</b>
+                        </font>
+                    </h5>
+                    <hr size="5px" color="#FF0000" width="25%" style="float: left; margin-top: -30px;; margin-bottom: 17px;" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="step-order" data-aos="zoom-in-down" data-aos-duration="1000">
+                        <b>Cara Order :</b>
+                        <br>
+                        1. Masukan ID (SERVER)
+                        <br>
+                        2. Pilih nominal Diamond
+                        <br>
+                        3. Pilih Metode Pembayaran
+                        <br>
+                        4. Masukan Nomor WhatsApp Kamu
+                        <br>
+                        5. Klik Beli Sekarang & Lakukan Pembayaran
+                        <br>
+                        6. Tunggu 1 - 3 Menit (Jika Event Max 6 Jam) Diamond Akan Masuk Otomatis Di Akun Anda.
+                        <br>
+                    </div>
+                </div>
+                <form id="form-order" autocomplete="off" data-aos="zoom-out-up" data-aos-duration="1000">
+                    <fieldset>
+                        <legend><b>FORM PEMBELIAN</b></legend>
+                        <div class="row">
+                            Nama Lengkap :<br/>
+                            <input type="text" placeholder="Masukkan nama lengkap" name="nama_lengkap" id="nama_lengkap" size="50px" ><br/><br/>
+                            Nickname (ingame) :<br/>
+                            <input type="text" name="nickname" id="nickname" placeholder="Masukkan nickname"><br/><br/>
+                            ID Ingame :<br/>
+                            <input type="number" name="user_id" id="user_id" placeholder="Masukkan id" oninput="MaxLengthCheck(this)" style="width: 10rem;" maxlength="9" min="1" max="999999999"><br/><br/>
+                            Server Ingame :<br/>
+                            <input type="number" name="server_id" id="server_id" placeholder="Contoh: 2111" oninput="MaxLengthCheck(this)" style="width: 10rem;" maxlength="5" min="1" max="99999"><br/><br/>
+                            Email :<br/>
+                            <input type="email" placeholder="Masukkan email" name="email" id="email" size="50px"><br/><br/>
+                            Pilih Nominal :<br/>
+                            <select name="nominal" id="nominal" style="text-align: center; cursor: pointer;">
+                                <option value=" ">- - Pilih Jumlah Diamonds - -</option>
+                                <option value="86 Diamonds - Rp. 20.000">86 Diamonds - Rp. 20.000</option>
+                                <option value="172 Diamonds - Fp. 41.000">172 Diamonds - Rp. 41.000</option>
+                                <option value="257 Diamonds - Rp. 61.000">257 Diamonds - Rp. 61.000</option>
+                                <option value="344 Diamonds - Rp. 82.000">344 Diamonds - Rp. 82.000</option>
+                                <option value="429 Diamonds - Rp. 102.000">429 Diamonds - Rp. 102.000</option>
+                                <option value="514 Diamonds - Rp. 123.000">514 Diamonds - Rp. 123.000</option>
+                            </select><br/><br/>
+                            Metode Pembayaran :<br/>
+                            <select name="payment" id="payment" style="cursor: pointer;">
+                                <option value=" ">- - Pilih Metode Pembayaran - -</option>
+                                <option value="Gopay">1. Gopay</option>
+                                <option value="OVO">2. OVO</option>
+                                <option value="ShopeePay">3. ShopeePay</option>
+                            </select><br/><br/>
+                            <input type="submit" name="submit" value="Kirim" onClick="konfirmasi()">
+                            <!-- <button onclick="kirim()">Kirim</button> -->
+                            <input type="reset" name="reset" value="Batal" onClick="hapus()"><br/><br/>
+                            <span style="color: yellow; font-style: italic; font-size: 15px;">*Kami akan mengirimkan email untuk mengkonfirmasi pembayaran. Harap cek email Anda.
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="about-web">
+                <ul class="desc-contact">
+                    <li class="desc" data-aos="zoom-in" data-aos-duration="1200">
+                        <span>Meongpedia</span>
+                        <hr size="5px" color="#FF0000" width="35%" style="float: left; margin-bottom: 17px;">
+                        <div class="clear" style="clear: left;"></div>
+                        Meongpedia adalah tempat para Gamers untuk<br>
+                        melakukan top up kredit dan item ingame suatu Game Online<br>
+                        yang cepat, murah, aman, dan terpercaya.
+                    </li>
+                    <li data-aos="zoom-in" data-aos-duration="1200">
+                        <span>Hubungi Kami</span>
+                        <hr size="5px" color="#FFF500" width="50%" style="float: left;">
+                        <div class="clear" style="clear: left;"></div>
+                        <p>
+                            <i class="fab fa-whatsapp fa-2x"></i>&nbsp;&nbsp;&nbsp;
+                            <a href="https://wa.me/6281215716294" class="hub" style="font-size: 19px;">Chat WhatsApp</a>
+                        </p>
+                        <p>
+                            <i class="fa fa-envelope fa-2x"></i>&nbsp;&nbsp;
+                            <a href="mailto:royanfarid32@gmail.com" class="hub" style="font-size: 20px;">Email</a>
+                        </p>
+                    </li>
+                </ul>
+                <ul class="follow" data-aos="zoom-in" data-aos-duration="1500">
+                    <li>
+                        <span>Ikuti Kami</span>
+                        <hr size="5px" color="#0094FF" width="16%">
+                        <div class="clear" style="clear: left;"></div>
+                        <a href="https://instagram.com/royan_farid"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="https://vt.tiktok.com/ZSeuedEKW"><i class="fab fa-tiktok fa-2x"></i></a>
+                        <a href="https://twitter.com/royan_farid"><i class="fab fa-twitter fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <p>&copyCopyright 2021 Meongpedia | Royan Farid all right reserved</p>
+        </footer>
+        <script>
+            AOS.init();
+        </script>
+        <script src="produk.js"></script>
+    </body>
+</html>

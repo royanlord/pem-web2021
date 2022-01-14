@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewpoint" content="width=device, initial-scale=1, maximum-scale=1, user-scalable:no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="register.css">
+        <link rel="stylesheet" href="font/fontawesome-free-5.15.4-web/css/all.min.css">
+        <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
+        <title>Register</title>
+    </head>
+    <body>
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form id="register-form" onSubmit="validasiDaftar()">
+                    <h1>Daftar</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google"></i></a>
+                    </div>
+                    <span>Daftar sekarang gratis</span>
+                    <input type="text" name="nama" id="nama" placeholder="Nama">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <button >Daftar</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container" data-aos="zoom-in">
+                <form onSubmit="validasiMasuk()">
+                    <h1>Masuk</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google"></i></a>
+                    </div>
+                    <span>Sudah punya akun?</span>
+                    <input type="email" id="emailMasuk" placeholder="Email">
+                    <input type="password" id="passwordMasuk" placeholder="Password">
+                    <button>Masuk</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p> Jika Anda sudah memiliki akun, silakan masuk untuk tetap terhubung dengan kami</p>
+                    <button class="ghost" id="signIn">Masuk</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hi Fams!</h1>
+                    <p>Belum punya akun? Silakan mendaftar dengan detail pribadi Anda untuk terhubung dengan kami! </p>
+                    <button class="ghost" id="signUp">Daftar</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <script src="register.js"></script>
+    </body>
+</html>

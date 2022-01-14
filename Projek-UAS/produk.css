@@ -1,0 +1,317 @@
+@font-face {
+    font-family: Gorditas; src: url('font/Gorditas-Regular.ttf');
+}
+
+@font-face {
+    font-family: Rakkas; src: url('font/Rakkas-Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto-Slab; src: url('font/RobotoSlab-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    background-color: black;
+    height: auto;
+    padding: 5px;
+}
+
+header h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: Rakkas;
+    padding-top: 40px;
+}
+
+.mark1{
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+header p {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20PX;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* Navbar */
+#menu-btn {
+    display: none;
+}
+
+nav {
+    background-color: #FFF500;
+    position: relative;
+    overflow: hidden;
+    height: 59px;
+    width: 100%;
+    margin-right: 0; margin-left: 0;
+}
+
+/* Text Navbar */
+nav .text-nav {
+    color: black;
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 17px 17px;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+    display: block;
+}
+
+nav .text-nav:hover {
+    background-color: #262626;
+    color: yellow;
+    transition-duration: 500ms;
+}
+
+/* Navbar user-login icon */
+nav .fa-user {
+    /* position: static; */
+    margin-right: 70px;
+    padding: 13px 37px;
+    float: right;
+    text-align: center;
+    color: black;
+    display: block;
+}
+
+nav .fa-user:hover {
+    background-color: #262626;
+    color: yellow;
+    transition-duration: 500ms;
+}
+
+/* Produk Content */
+.produk {
+    background-color: #262626;
+    margin-top: -43px;
+    height: 1600px;
+    width: 100%;
+}
+
+/* Title Sect Produk */
+.produk h1 {
+    font-family: Roboto-Slab;
+    font-size: 2.5rem;
+    color: white;
+    padding: 35px 20px 0px 41px;
+}
+
+/* Desc Produk */
+.desc-produk {
+    margin-left: 35px;
+}
+
+.desc-produk img {
+    background-size: contain;
+    max-width: 640px;
+    width: 90%;
+    height: auto;
+    margin-bottom: -35px;
+}
+
+.desc-produk h5 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    padding-top: 18px;
+}
+
+/* Step Order */
+.step-order {
+    font-size: 1.1rem;
+    line-height: 25px;
+}
+
+.step-order b {
+    font-size: 1.5rem;
+}
+
+/* Form Order */
+.produk form {
+    background-color: black;
+    width: 1000px;
+    height: auto;
+    /* max-width: 100%; */
+    margin: 30px auto 0 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 18px;
+    border: thin;
+    padding: 0 20px 15px 20px;
+    border-radius: 10px;
+}
+
+#form-order fieldset {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+input, select {
+    border: solid 1px;
+    border-radius: 3px;
+    height: 32px;
+}
+
+select:focus {
+    outline: none;
+    border-color: yellow;
+}
+
+input:focus {
+    outline: none;
+    border-color: yellow;
+}
+
+input[type=submit], input[type=reset] {
+    font-weight: normal;
+    height: 28px;
+    width: 90px;
+    cursor: pointer;
+}
+
+input[type=submit]:focus {
+    font-weight: bold;
+    border-color: yellow;
+}
+
+input[type=reset]:focus {
+    font-weight: bold;
+    border-color: yellow;
+}
+
+input[type=submit]:hover {
+    color: yellow;
+    background-color: #000000bb;
+}
+
+input[type=reset]:hover {
+    color: yellow;
+    background-color: #000000bb;
+}
+
+#form-order legend {
+    font-family: Roboto-Slab;
+    letter-spacing: 3px;
+    font-size: 25px;
+    padding: 5px 10px 5px 10px;
+}
+
+/* About web */
+.about-web {
+    background-color: black;
+    height: auto;
+    width: 100%;
+}
+
+.about-web ul li {
+    padding: 2em;
+    color: white;
+}
+
+.about-web ul li span {
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+    font-family: Roboto-Slab;
+}
+
+/* Dsec and Contact */
+.about-web .desc-contact {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    margin: 0;
+    padding: 0;
+}
+
+/* Desc */
+.about-web .desc-contact .desc {
+    /* margin-left: 50px; */
+    font-size: 20px;
+}
+
+/* Contact */
+p .hub {
+    text-decoration: none;
+    color: white;
+    font-family: Roboto-Slab;
+}
+
+p .hub:hover {
+    text-decoration: underline;
+}
+
+/* Follow */
+.about-web .follow {
+    list-style-type: none;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.fa-instagram, .fa-tiktok, .fa-twitter {
+    padding: 0 15px;
+    margin-top: 10px;
+    color: white;
+    font-size: 40px;
+}
+
+/* Footer */
+footer {
+    margin-top: -20px;
+    background-color: #FFF500;
+    width: 100%;
+    height: auto;
+    margin-bottom: -20px;
+}
+
+footer p {
+    color: black;
+    font-family: Roboto-Slab;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* @media screen and (max-width: 580px) {
+    .fa-user {
+        float: left;
+    }    
+} */
+
+@media screen and (max-width: 768px) {
+.produk {
+    height: auto;
+}
+
+    .produk form {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .produk form {
+        width: auto;
+    }
+}
